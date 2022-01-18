@@ -122,7 +122,7 @@
                 <div class="subtotal">
                     Subtotal (0 ítens): R$ 0
                 </div>
-                <div class="checkout">
+                <div class="checkout" onclick="proceedToPayment()">
                     Prosseguir para o pagamento
                 </div>
             </div>
@@ -130,7 +130,7 @@
     </div>
 
     <script>
-        const porductsListEl = document.querySelector(".products-list");
+        const productsListEl = document.querySelector(".products-list");
         const seeMoreBtn = document.querySelector(".see-more-btn");
 
         seeMoreBtn.addEventListener('click', () => {

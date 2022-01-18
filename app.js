@@ -128,3 +128,12 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+
+// prossegue para o pagamento se tiver, pelo menos, um ítem adicionado no carrinho
+function proceedToPayment() {
+  if (cart.length === 0) {
+    alert("Deve haver ao menos um ítem no carrinho para prosseguir");
+  } else {
+    location.replace( "./paymentForm.html");
+  }
+}

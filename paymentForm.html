@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Pagamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="paymentForm.css">
+</head>
+<body>
+
+    <h1>Formulário de Pagamento</h1>
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form action="/action_page.php">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Endereço de cobrança</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Seu Nome">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" placeholder="seuendereco@email.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Endereço</label>
+                            <input type="text" id="adr" name="address" placeholder="Seu Endereço">
+                            <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+                            <input type="text" id="city" name="city" placeholder="Sua Cidade">
+
+                            <div class="row">
+                                <div class="class-50">
+                                    <label for="state">Estado</label>
+                                    <input type="text" id="state" name="state" placeholder="Seu Estado">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">CEP</label>
+                                    <input type="text" id="zip" name="zip" placeholder="Seu CEP">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Pagamento</h3>
+                            <label for="fname">Cartões aceitos</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Nome no Cartão</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Nome no Cartão">
+                            <label for="cnum">Número do Cartão de Crédito</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="Seu Número">
+                            <label for="expmonth">Mês de Expiração</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="Mês de Expiração">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Ano de Expiração</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="Ano de Expiração">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="Código do Cartão">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Endereço de Entrega
+                    </label>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-25">
+            <div class="container">
+            </div>
+            <input type="submit" value="Pagar" class="btn" onclick="showMessage()">
+        </div>
+    </div>
+    
+    <script>
+        function showMessage() {
+            alert( "Obrigado! Volte sempre!" );
+        }
+    </script>
+</body>
+</html>
